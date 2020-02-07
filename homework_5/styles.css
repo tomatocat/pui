@@ -106,3 +106,22 @@ h3 {
   border-radius: 15px;
   padding: 8px 70px;
 }
+
+#store-title {
+  margin-left: 8%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.main-shop-grid {
+  margin: 4% 8%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
