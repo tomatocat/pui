@@ -1,5 +1,108 @@
 body {
   font-size: 16px;
-  font-family: Helvetica;
-  background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0D1AC;
+  color: #661414;
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-left: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: #661414;
+}
+
+p {
+  color: black;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+  background-color: #FFF3D4;
+  overflow: hidden;
+  color: black;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFC2A0;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #F8945C;
+  color: white;
+}
+
+/* align topbar */
+.topnav a.navleft {
+  float: left;
+}
+
+.topnav a.navright {
+  float: right;
+}
+
+#home {
+  margin-left:8%;
+}
+
+#cart {
+  margin-right:8%;
+}
+
+.grid-container {
+  margin: 4% 8%;
+  display: grid;
+  grid-column-gap: 6%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-col1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+#home-img {
+  border-radius: 10px;
+  width: 300px;
+  float: right;
+}
+
+.home-col2 {
+  width: 400px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+h3 {
+  font-family: 'Zilla Slab', serif;
+  font-size: 30px;
+}
+
+.home-col2 p {
+  padding-bottom: 15px;
+}
+
+.home-col2 a {
+  font-size: 36px;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #FFF3D4;
+  border-radius: 15px;
+  padding: 8px 70px;
 }
