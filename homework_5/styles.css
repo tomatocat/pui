@@ -121,7 +121,12 @@ hr {
 .main-shop-grid {
   margin: 4% 8%;
   display: grid;
-  justify-content: center;
+  justify-content: space-around;
   grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.shop-col1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
