@@ -1,0 +1,1 @@
+extra work: I created store pages for every item listed.

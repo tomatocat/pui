@@ -93,13 +93,20 @@ p {
 h3 {
   font-family: 'Zilla Slab', serif;
   font-size: 30px;
+  margin-top: 0px;
   font-weight: normal;
+}
+
+#desc {
+  margin-top: -30px;
+  margin-bottom: -15px;
 }
 
 h4 {
   font-family: 'Zilla Slab', serif;
   font-size: 20px;
   font-weight: normal;
+  line-height: 0.1em;
 }
 
 .selected {
@@ -179,4 +186,46 @@ hr {
 
 .store-item a:hover {
   text-decoration: underline;
+}
+
+.select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.select-size {
+  background-color: #F6DEC1;
+  border: 1px solid #661414;
+  padding: 5px;
+  margin: 0px 10px 0px 10px;
+}
+
+.select-color {
+  height: 25px;
+  margin: 0px 10px 8px 10px;
+  border: 2px solid #661414;
+  opacity: 0.5;
+}
+
+#tiny {
+  background-color: #FFF3D4;
+  border: 1px solid #E24E4E;
+}
+
+#strawberry {
+  opacity: 1;
+  background-color: #FE5D7A;
+  border-color: #FFF3D4;
+}
+
+#blackberry {
+  background-color: #2F3251;
+}
+
+#crazyberry {
+  background-color: #93BFE8;
+}
+
+#fire-orange {
+  background-color: #FF9A61;
 }
