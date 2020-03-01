@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PUI Homework 5" />
+    <title>PUI HW5</title>
+    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Zilla+Slab">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="resources/scripts.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+    <div class="banner">
+      <a href="index.html">
+        <h1>Muddy Paws Adventure Gear</h1>
+      </a>
+    </div>
+
+    <div class="topnav">
+      <a class="navleft" id="home" href="index.html">HOME</a>
+      <a class="active navleft" href="store.html">STORE</a>
+      <a class="navright" href="" id="cart">CART (0)</a>
+      <a class="navright" href="">CONTACT</a>
+    </div>
+    </header>
+
+    <h3 id="store-title"><a href="store.html">< Back to Store</a></h3>
+    <hr color="#661414" />
+    <div class="grid-container">
+
+      <div class="home-col1">
+        <img id="home-img" src="resources/images/cat-backpack.jpg" />
+      </div>
+
+      <div class="home-col2">
+        <h3>Cat Backpack</h3>
+        <p id="desc">Carry your cat on your back!</p>
+        <h4>Quantity
+          <select id="qty">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </h4>
+        <h4>Size (selected: <span class="selected">tiny</span>)</h4>
+          <div class="select-grid">
+            <div class="select-size" id="tiny" align="center">Tiny</div>
+            <div class="select-size" id="small" align="center">Small</div>
+            <div class="select-size" id="medium" align="center">Medium</div>
+            <div class="select-size" id="large" align="center">Large</div>
+          </div>
+        <h4>Color (selected: <b>strawberry</b>)</h4>
+          <div class="select-grid">
+            <div class="select-color" id="strawberry"></div>
+            <div class="select-color" id="blackberry"></div>
+            <div class="select-color" id="crazyberry"></div>
+            <div class="select-color" id="fire-orange"></div>
+          </div>
+        <br />
+        <a href="">Add to Cart</a>
+      </div>
+    </div>
+​
+  </body>
+
+</html>
