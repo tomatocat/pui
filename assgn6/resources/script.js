@@ -1,13 +1,25 @@
 function pickSize(e) {
-  document.getElementsByClassName("stylebutton") //set back to default
-
-  //change the one clicked
+  var buttons = document.getElementsByClassName("select-size");
+  for (item of buttons) {
+    if (item === e) {
+      item.classList.add("active");
+    } else {
+      item.className = "select-size";
+    }
+  }
 }
 
 function pickColor(e) {
-   var target = e.target,
-       status = e.target.classList.contains('active');
+  var buttons = document.getElementsByClassName("select-color");
+  for (item of buttons) {
+    if (item === e) {
+      item.classList.add("active");
+    } else {
+      item.className = "select-color";
+    }
+  }
+}
 
-   e.target.classList.add(status ? 'inactive' : 'active');
-   e.target.classList.remove(status ? 'active' : 'inactive'); 
+function addCart() {
+  document.getElementById("cart-qty").innerHTML++;
 }

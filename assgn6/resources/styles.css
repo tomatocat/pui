@@ -20,6 +20,16 @@ p {
   color: black;
 }
 
+button {
+  height: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 /* Add a background color to the top navigation */
 .topnav {
   background-color: #FFF3D4;
@@ -200,22 +210,25 @@ hr {
   margin: 0px 10px 0px 10px;
 }
 
+.select-size.active {
+  background-color: #FFF3D4;
+  border: 1px solid #E24E4E;
+}
+
 .select-color {
-  height: 25px;
+  height: 30px;
   margin: 0px 10px 8px 10px;
   border: 2px solid #661414;
   opacity: 0.5;
 }
 
-#tiny {
-  background-color: #FFF3D4;
-  border: 1px solid #E24E4E;
+.select-color.active {
+  opacity: 1;
+  border-color: #FFF3D4;
 }
 
 #strawberry {
-  opacity: 1;
   background-color: #FE5D7A;
-  border-color: #FFF3D4;
 }
 
 #blackberry {
@@ -228,4 +241,16 @@ hr {
 
 #fire-orange {
   background-color: #FF9A61;
+}
+
+.add-cart {
+  text-decoration: none;
+  color: #661414;
+  height: 100px;
+  border: none;
+  font-size: 36px;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #FFF3D4;
+  border-radius: 15px;
+  padding: 8px 70px;
 }
