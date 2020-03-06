@@ -146,6 +146,17 @@ hr {
   margin-right: 3%;
 }
 
+#subtotal {
+  margin: -5px 0px 10px 0px;
+  height: 0px;
+  border-top: 0.1px solid #661414;
+}
+
+.price {
+  margin-right: 35px;
+  float: right;
+}
+
 .main-shop-grid {
   margin: 4% 8%;
   display: grid;
@@ -253,4 +264,55 @@ hr {
   background-color: #FFF3D4;
   border-radius: 15px;
   padding: 8px 70px;
+}
+
+.cart-grid {
+  margin: 4% 8%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 3fr 1fr;
+}
+
+.cart-item {
+  border-bottom: 1px solid #661414;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 20px 0px 15px 0px;
+  margin: 2px;
+}
+
+.cart-item img {
+  max-width: 100%;
+  width: 150px;
+  border-radius: 10px;
+
+}
+
+#first-item {
+  border-top: 1px solid #661414;
+}
+
+.remove-item {
+  margin-right: 35px;
+  text-decoration: underline;
+  float: right;
+}
+
+.cart-item-info {
+  margin-left: 20px;
+}
+
+.cart-total {
+  width: 300px;
+  padding-left: 30px;
+  border-left: 1px solid #661414;
+}
+
+.cart-qty {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.right {
+  float: right;
 }

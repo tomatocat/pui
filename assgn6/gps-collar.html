@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="PUI Homework 5" />
-    <title>PUI HW5</title>
+    <title>PUI HW6</title>
     <link rel="stylesheet" type="text/css" href="resources/styles.css" />
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Zilla+Slab">
     <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="resources/script.js"></script>
   </head>
 
   <body>
@@ -24,7 +25,7 @@
     <div class="topnav">
       <a class="navleft" id="home" href="index.html">HOME</a>
       <a class="active navleft" href="store.html">STORE</a>
-      <a class="navright" href="" id="cart">CART (0)</a>
+      <a class="navright" href="cart.html" id="cart">CART (0)</a>
       <a class="navright" href="">CONTACT</a>
     </div>
     </header>
@@ -51,17 +52,17 @@
         </h4>
         <h4>Size (selected: <span class="selected">tiny</span>)</h4>
           <div class="select-grid">
-            <div class="select-size" id="tiny" align="center">Tiny</div>
-            <div class="select-size" id="small" align="center">Small</div>
-            <div class="select-size" id="medium" align="center">Medium</div>
-            <div class="select-size" id="large" align="center">Large</div>
+            <button class="select-size active" id="tiny" align="center" onclick="pickSize(this)">Tiny</button>
+            <button class="select-size" id="small" align="center" onclick="pickSize(this)">Small</button>
+            <button class="select-size" id="medium" align="center" onclick="pickSize(this)">Medium</button>
+            <button class="select-size" id="large" align="center" onclick="pickSize(this)">Large</button>
           </div>
         <h4>Color (selected: <b>strawberry</b>)</h4>
           <div class="select-grid">
-            <div class="select-color" id="strawberry"></div>
-            <div class="select-color" id="blackberry"></div>
-            <div class="select-color" id="crazyberry"></div>
-            <div class="select-color" id="fire-orange"></div>
+            <button class="select-color active" id="strawberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="blackberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="crazyberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="fire-orange" onclick="pickColor(this)"></button>
           </div>
         <br />
         <a href="">Add to Cart</a>

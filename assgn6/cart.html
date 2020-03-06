@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PUI Homework 5" />
+    <title>PUI HW6</title>
+    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Zilla+Slab">
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body>
+
+    <header>
+    <div class="banner">
+      <a href="index.html">
+        <h1>Muddy Paws Adventure Gear</h1>
+      </a>
+    </div>
+
+    <div class="topnav">
+      <a class="navleft" id="home" href="index.html">HOME</a>
+      <a class="navleft" href="store.html">STORE</a>
+      <a class="active navright" href="cart.html" id="cart">CART (1)</a>
+      <a class="navright" href="">CONTACT</a>
+    </div>
+    </header>
+
+    <h3 id="store-title">Your Shopping Cart</h3>
+    <hr color="#661414" />
+
+    <div class="cart-grid">
+      <div class="items-in-cart">
+        <div class="cart-item" id="first-item">
+          <img src="resources/images/cat-harness.jpg" />
+          <div class="cart-item-info">
+            <h3>Cat harness <span class="price">$0</span></h3>
+            <h4>Qty: <select class="cart-qty">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </h4>
+            <h4>Size: <span class="selected">tiny</span></h4>
+            <h4>Color: <span class="selected">strawberry</span> <a href="" class="remove-item">Remove</a></h4>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="resources/images/cat-harness.jpg" />
+          <div class="cart-item-info">
+            <h3>Cat harness <span class="price">$0</span></h3>
+            <h4>Qty: <select class="cart-qty">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </h4>
+            <h4>Size: <span class="selected">small</span></h4>
+            <h4>Color: <span class="selected">crazyberry</span> <a href="" class="remove-item">Remove</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <p> Subtotal: <span class="right">$0</span>
+        <br />
+        Shipping & Handling: <span class="right">$0</span>
+        <hr color="#661414" id="subtotal" />
+        Total (without tax): <span class="right">$0</span>
+        </p>
+        <button class="add-cart">Checkout</button>
+      </div>
+
+    </div>
+​
+  </body>
+
+</html>
