@@ -25,7 +25,7 @@
     <div class="topnav">
       <a class="navleft" id="home" href="index.html">HOME</a>
       <a class="active navleft" href="store.html">STORE</a>
-      <a class="navright" href="cart.html" id="cart">CART (0)</a>
+      <a class="navright" href="cart.html" id="cart">CART (<span id="cart-qty">0</span>)</a>
       <a class="navright" href="">CONTACT</a>
     </div>
     </header>
@@ -50,22 +50,22 @@
             <option value="5">5</option>
           </select>
         </h4>
-        <h4>Size (selected: <span class="selected">tiny</span>)</h4>
+        <h4>Size (selected: <span class="selected" id="size-text">tiny</span>)</h4>
           <div class="select-grid">
             <button class="select-size active" id="tiny" align="center" onclick="pickSize(this)">Tiny</button>
             <button class="select-size" id="small" align="center" onclick="pickSize(this)">Small</button>
             <button class="select-size" id="medium" align="center" onclick="pickSize(this)">Medium</button>
             <button class="select-size" id="large" align="center" onclick="pickSize(this)">Large</button>
           </div>
-        <h4>Color (selected: <b>strawberry</b>)</h4>
+        <h4>Color (selected: <span class="selected" id="color-text">strawberry</span>)</h4>
           <div class="select-grid">
-            <button class="select-color active" id="strawberry" onclick="pickColor(this)"></button>
-            <button class="select-color" id="blackberry" onclick="pickColor(this)"></button>
-            <button class="select-color" id="crazyberry" onclick="pickColor(this)"></button>
-            <button class="select-color" id="fire-orange" onclick="pickColor(this)"></button>
+            <button class="select-color active" id="strawberry" value="strawberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="blackberry" value="blackberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="crazyberry" value="crazyberry" onclick="pickColor(this)"></button>
+            <button class="select-color" id="fire-orange" value="fire orange" onclick="pickColor(this)"></button>
           </div>
         <br />
-        <a href="">Add to Cart</a>
+        <button class="add-cart" onclick="addCart('resources/images/gps-collar.jpg', 'GPS Collar')">Add to Cart</button>
       </div>
     </div>
 ​

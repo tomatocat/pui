@@ -10,6 +10,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Zilla+Slab">
     <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="resources/script.js"></script>
   </head>
 
   <body>
@@ -24,7 +25,7 @@
     <div class="topnav">
       <a class="navleft" id="home" href="index.html">HOME</a>
       <a class="navleft" href="store.html">STORE</a>
-      <a class="active navright" href="cart.html" id="cart">CART (1)</a>
+      <a class="active navright" href="cart.html" id="cart">CART (<span id="cart-qty">0</span>)</a>
       <a class="navright" href="">CONTACT</a>
     </div>
     </header>
@@ -32,9 +33,10 @@
     <h3 id="store-title">Your Shopping Cart</h3>
     <hr color="#661414" />
 
-    <div class="cart-grid">
-      <div class="items-in-cart">
-        <div class="cart-item" id="first-item">
+    <div class="cart-grid" id="cart-grid">
+      <div class="items-in-cart" id="cart-items">
+        <!--
+        <div class="cart-item first-item">
           <img src="resources/images/cat-harness.jpg" />
           <div class="cart-item-info">
             <h3>Cat harness <span class="price">$0</span></h3>
@@ -50,6 +52,7 @@
             <h4>Color: <span class="selected">strawberry</span> <a href="" class="remove-item">Remove</a></h4>
           </div>
         </div>
+
         <div class="cart-item">
           <img src="resources/images/cat-harness.jpg" />
           <div class="cart-item-info">
@@ -65,7 +68,7 @@
             <h4>Size: <span class="selected">small</span></h4>
             <h4>Color: <span class="selected">crazyberry</span> <a href="" class="remove-item">Remove</a></h4>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="cart-total">
         <p> Subtotal: <span class="right">$0</span>
