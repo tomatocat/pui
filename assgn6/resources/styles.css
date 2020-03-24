@@ -255,6 +255,7 @@ hr {
 }
 
 .add-cart {
+  width: 400px;
   text-decoration: none;
   color: #661414;
   height: 100px;

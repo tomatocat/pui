@@ -82,7 +82,14 @@ function pickColor(e) {
   }
 }
 
+function restore() {
+  document.getElementById("add-cart").innerHTML = "Add to Cart";
+}
+
 function addCart(image, title) {
+  document.getElementById("add-cart").innerHTML = "Added!";
+  window.setTimeout(restore, 850);
+
   var qty = document.getElementById("qty").selectedIndex + 1;
   var size = document.getElementsByClassName("select-size active")[0].id;
   var color = document.getElementsByClassName("select-color active")[0].value;
