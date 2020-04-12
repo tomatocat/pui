@@ -3,39 +3,48 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="PUI Homework 5" />
     <title>Jeremy Wang</title>
-    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="assets/js/script.js"></script> 
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Zilla+Slab">
+          href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
   <body>
 
     <header>
-
-    <div class="topnav">
-      <a class="active navleft" id="home" href="index.html">HOME</a>
-      <a class="navleft" href="store.html">STORE</a>
-      <a class="navright" href="" id="cart">CART (0)</a>
-      <a class="navright" href="">CONTACT</a>
-    </div>
+      <div id="navbar" class="topnav sticky pullUp">
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+          <i class="fa fa-bars" id="navmenu"></i>
+        </a>
+        <a href="photography.html">PHOTOGRAPHY</a>
+        <a href="software.html">SOFTWARE</a>
+        <a href="index.html">ABOUT</a>
+      </div>
+      <div id="nav-separator" class="separator active"></div>
+      <div id="nav-separator-bottom" class="separator active"></div>
     </header>
 
-    <div class="grid-container">
-      <div class="home-col1">
-        <img id="home-img" src="resources/images/chien.jpg" alt="dog"/>
+    <div class="card">
+      <div class="left">
+        <h1>hi, i'm jeremy!</h1>
+        <div class="info">
+          <p>I’m a computer science and human- computer interaction student at Carnegie Mellon University. I like making things!
+
+In my free time, I prefer playing music, drawing, or spending time with my cat (her name is Meme).
+
+Email   |    Github link   |    LinkedIn link</p>
+        </div>
       </div>
 
-      <div class="home-col2">
-        <h3>Welcome to Muddy Paws Adventure Gear!</h3>
-        <p>Muddy Paws Adventure Gear provides the latest and greatest pet gear!
-          We provide products in a variety of colors and sizes to fit you and your pets’ needs.
-          Quality is our top concern, always.</p>
-        <a href="store.html">Go to Store</a>
+      <div class="right">
+        <p>ppplacehodle</p>
       </div>
+
     </div>
 ​
   </body>
