@@ -59,8 +59,8 @@
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/* When the screen is less than 640 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 640px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -72,7 +72,7 @@
 }
 
 /* Added when user clicks on the icon. Displays links vertically instead of horizontally. */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .topnav.responsive a.icon {
     right: 0;
     top: 0;
@@ -142,6 +142,7 @@ h1 {
 
 .my-gallery img {
   height: 275px;
+  max-width: 100%;
   width: auto;
 }
 
