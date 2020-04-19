@@ -231,6 +231,11 @@ p {
 
 .b {
   font-weight: 900;
+  color: #A11313;
+}
+
+a {
+  text-decoration: none;
 }
 
 .orange {
