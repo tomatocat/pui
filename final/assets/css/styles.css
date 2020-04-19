@@ -1,3 +1,4 @@
+/* Define style for top navigation bar */
 .topnav {
   background-color: white;
   overflow: hidden;
@@ -15,6 +16,7 @@
   z-index: 2;
 }
 
+/* Lines to separate the navbar from the page body, with fading transition */
 #nav-separator {
   padding-top: 65px;
   margin-left: 3%;
@@ -39,6 +41,10 @@
 
 .active {
   opacity: 1;
+}
+
+body {
+  margin-bottom: 30px;
 }
 
 /* Style the links inside the navigation bar */
@@ -146,12 +152,14 @@ h1 {
   width: auto;
 }
 
+/* Make sure images aren't squished on small screens */
 @media screen and (max-width: 640px) {
   .my-gallery img {
     height: auto;
   }
 }
 
+/* Do not display caption on gallery images until they are zoomed into on the lightbox */
 .my-gallery figcaption {
   display: none;
 }
@@ -160,4 +168,109 @@ h1 {
   display: block;
   float: left;
   margin: 0 7px 7px 0;
+}
+
+.project-block {
+  margin-top: 10px;
+}
+
+
+/* Make main Software page responsive by using 2 columns on large screen sizes only */
+.proj-desc {
+  font-style: italic; 
+  font-weight: lighter;
+}
+
+/* Want images to always preserve aspect ratio and be vertically centered with the text */
+.left {
+  margin-right: 15px;
+  flex: 1;
+  max-width: 600px;
+  object-fit: cover;
+  height: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.left img:hover {
+  opacity: 80%;
+}
+
+/* Images shoud be vertically centered with the text */
+.right {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the brief project descriptions */
+.right h3 {
+  font-size: 50px;
+  font-size: 3em;
+  color: #A11313;
+  font-family: 'Roboto', sans-serif;
+}
+
+.right h6 {
+  font-size: 20px;
+  font-size: 1.5em;
+  color: #5C0F0F;
+  margin-top: -25px;
+  margin-bottom: -20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.right p {
+  font-size: 30px;
+  font-size: 2em;
+  color: #5C0F0F;
+  font-family: 'Roboto', sans-serif;
+}
+
+.right h3 a {
+  text-decoration: none;
+  color: #A11313;
+}
+
+.right p a {
+  text-decoration: none;
+  color: #5C0F0F;
+}
+
+.title a {
+  text-decoration: none;
+  color: #5C0F0F;
+}
+
+@media only screen and (max-width:1000px) {
+  .right h3 {
+    font-size: 42px;
+  }
+
+  .right p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .left {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .project-block {
+    display: flex;
+  }
+}
+
+/* Style the "Back" link within specific project pages */
+.back {
+  font-size: 40px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #5C0F0F;
 }

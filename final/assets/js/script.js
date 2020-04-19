@@ -1,3 +1,4 @@
+// Remove lines separating navbar and rest of page body
 function removeLines() {
   var topline = document.getElementById("nav-separator");
   var botline = document.getElementById("nav-separator-bottom");
@@ -7,6 +8,7 @@ function removeLines() {
   botline.classList.add("fade");
 }
 
+// Add lines separating navbar and rest of page body
 function addLines() {
   var topline = document.getElementById("nav-separator");
   var botline = document.getElementById("nav-separator-bottom");
@@ -16,6 +18,7 @@ function addLines() {
   botline.classList.add("active");  
 }
 
+// When the screen size is small enough, change the navbar to collapse into a hamburger menu
 function responsiveNav() {
   var navbar = document.getElementById("navbar");
   var navmenu = document.getElementById("navmenu");

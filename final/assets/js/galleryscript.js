@@ -1,4 +1,4 @@
-
+// initialize photoswipe gallery (Using the API)
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
