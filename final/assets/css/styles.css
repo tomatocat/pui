@@ -192,7 +192,7 @@ h1 {
   margin-right: 15px;
   flex: 1;
   max-width: 600px;
-  object-fit: cover;
+  align-items: flex-start;
   height: auto;
   justify-content: center;
   display: flex;
@@ -318,8 +318,9 @@ h1 {
   opacity: 100%;
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1150px) {
   .left-img-block {
     display: flex;
+    align-items: flex-start;
   }
 }
